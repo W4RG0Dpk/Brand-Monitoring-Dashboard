@@ -1,73 +1,128 @@
-# Welcome to your Lovable project
+<<<<<<< HEAD
+# AI-Agent-Hackathon
+hackathon
+=======
 
-## Project info
+# AI Agent Hackathon – Brand Monitoring Dashboard
 
-**URL**: https://lovable.dev/projects/0f36f0e3-5008-4df2-a2cb-3d84f1cd8ee0
+## Project Overview
 
-## How can I edit this code?
+This project is a full-stack application for advanced brand monitoring and competitive intelligence. It features:
+- **Frontend**: React + TypeScript (with Vite, Tailwind CSS, and reusable UI components)
+- **Backend**: FastAPI (Python) with an endpoint for uploading CSVs and generating executive-level brand analysis using the Perplexity API
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+- Upload a CSV of brands, competitors, and influencers
+- Automated, in-depth brand analysis using LLMs
+- Executive-style reports with actionable insights
+- Modern, responsive UI
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0f36f0e3-5008-4df2-a2cb-3d84f1cd8ee0) and start prompting.
+## Folder Structure
 
-Changes made via Lovable will be committed automatically to this repo.
+```
+hacka/
+│
+├── backend/                # FastAPI backend
+│   └── main.py
+├── public/                 # Static assets
+├── src/                    # React frontend source
+│   ├── components/         # UI and dashboard components
+│   ├── hooks/              # Custom React hooks
+│   ├── lib/                # Utility functions
+│   └── pages/              # App pages
+├── package.json            # Frontend dependencies and scripts
+├── tailwind.config.ts      # Tailwind CSS config
+├── vite.config.ts          # Vite config
+├── tsconfig*.json          # TypeScript configs
+└── README.md               # Project documentation
+```
 
-**Use your preferred IDE**
+## Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Node.js** (v18+ recommended)
+- **Python** (3.12+ recommended)
+- **pip** (Python package manager)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Setup Instructions
 
-Follow these steps:
+### 1. Clone the repository
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+git clone https://github.com/W4RG0Dpk/AI-Agent-Hackathon.git
+cd AI-Agent-Hackathon
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 2. Install Frontend Dependencies
 
-# Step 3: Install the necessary dependencies.
-npm i
+```sh
+npm install
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### 3. Install Backend Dependencies
+
+```sh
+cd backend
+pip install fastapi uvicorn requests python-multipart
+cd ..
+```
+
+### 4. Set Perplexity API Key (Optional)
+
+By default, a demo key is used. For production, set your own key as an environment variable:
+
+```sh
+# On Windows (PowerShell)
+$env:PERPLEXITY_API_KEY="your-key-here"
+# On Linux/macOS
+export PERPLEXITY_API_KEY="your-key-here"
+```
+
+### 5. Run the Backend
+
+From the project root:
+
+```sh
+& "C:/Program Files/Python312/python.exe" -m uvicorn backend.main:app --reload
+```
+
+Or, if `python` is in your PATH:
+
+```sh
+python -m uvicorn backend.main:app --reload
+```
+
+### 6. Run the Frontend
+
+```sh
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The frontend will be available at http://localhost:5173 and the backend at http://127.0.0.1:8000.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## How to Push This Folder to GitHub
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. **Initialize Git (if not already):**
+   ```sh
+   git init
+   ```
 
-## What technologies are used for this project?
+2. **Add all files:**
+   ```sh
+   git add .
+   ```
 
-This project is built with:
+3. **Commit your changes:**
+   ```sh
+   git commit -m "Initial commit"
+   ```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/0f36f0e3-5008-4df2-a2cb-3d84f1cd8ee0) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+4. **Add the remote and push:**
+   ```sh
+   git remote add origin https://github.com/W4RG0Dpk/AI-Agent-Hackathon.git
+   git branch -M main
+   git push -u origin main
+   ```
+>>>>>>> cd9c12f7 (Initial commit)
