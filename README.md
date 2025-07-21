@@ -2,7 +2,10 @@
 
 hackathon
 
-
+![Python](https://img.shields.io/badge/-Python-3.10+-blue?logo=python&logo	
+![React](https://img.shields.io/badge/-React-61daf	
+![FastAPI](https://img.shields.io/badge/-FastAPI	
+![Perplexity](https://img.shields.io/badge/-Perplexity
 
 # AI Agent Hackathon – Brand Monitoring Dashboard
 
