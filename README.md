@@ -2,10 +2,16 @@
 
 hackathon
 
-![Python](https://img.shields.io/badge/-Python-3.10+-blue?logo=python&logo	
-![React](https://img.shields.io/badge/-React-61daf	
-![FastAPI](https://img.shields.io/badge/-FastAPI	
-![Perplexity](https://img.shields.io/badge/-Perplexity
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/React-Frontend-61DAFB?logo=react&logoColor=black" alt="React Frontend">
+  <img src="https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi&logoColor=white" alt="FastAPI Backend">
+  <img src="https://img.shields.io/badge/Perplexity-LLM%20API-blueviolet?logo=openai&logoColor=white" alt="Perplexity API">
+  <img src="https://img.shields.io/badge/Status-Production--Ready-brightgreen?logo=checkmarx&logoColor=white" alt="Status">
+  <img src="https://img.shields.io/badge/Contributions-Welcome-yellowgreen?logo=github" alt="Contributions Welcome">
+
+</p>
+
 
 # AI Agent Hackathon – Brand Monitoring Dashboard
 
